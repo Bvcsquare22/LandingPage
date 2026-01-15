@@ -47,4 +47,27 @@
       <h2>Join the Waitlist</h2>
       <form>
         <input type="text" placeholder="Your name" required />
-        <input type="email" placeholder="
+        <input type="email" placeholder="<form>
+  <input type="text" placeholder="Your name" required />
+  <input type="email" placeholder="Your email" required />
+  <button type="submit" class="submit-btn">Submit</button>
+</form>Your email" required />
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function openModal() {
+      document.getElementById('waitlistModal').style.display = 'block';
+    }
+
+    function closeModal(event) {
+      if (event.target.id === 'waitlistModal') {
+        document.getElementById('waitlistModal').style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -159,3 +159,10 @@ footer {
     flex-direction: column;
   }
 }
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: flex;
+}
