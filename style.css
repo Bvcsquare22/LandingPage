@@ -1,0 +1,161 @@
+:root {
+  --gold: #d4af37;
+  --black: #0b0b0b;
+  --gradient: linear-gradient(135deg, #d4af37, #0b0b0b);
+}
+
+•⁠  ⁠{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  background: var(--black);
+  color: white;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #d6d6d6;
+  margin-bottom: 2rem;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  border: none;
+  background: var(--gradient);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* DOWNLOAD BUTTONS */
+.downloads {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.download-btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 25px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+  background: rgba(212, 175, 55, 0.15);
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #0f0f0f;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #1a1a1a;
+  color: white;
+}
+
+.modal-content input:focus {
+  outline: 1px solid var(--gold);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 25px;
+  border: none;
+  background: var(--gradient);
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .downloads {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Doer</title>
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>The Doer</h1>
+      <p>
+        Turning steps into communities, accountability, and real rewards.
+      </p>
+
+      <button class="cta-btn" onclick="openModal()">Join the Waitlist</button>
+
+      <div class="downloads">
+        <button class="download-btn">
+          <i class="fab fa-android"></i> Android
+        </button>
+        <button class="download-btn">
+          <i class="fab fa-apple"></i> App Store
+        </button>
+        <button class="download-btn">
+          <i class="fas fa-download"></i> Manual Download
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST MODAL -->
+  <div class="modal" id="waitlistModal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <h2>Join the Waitlist</h2>
+      <form>
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="
